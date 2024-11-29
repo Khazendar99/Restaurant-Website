@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="./imgs/chef-logo.png" alt="chef logo" />
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="first" id="home">
+      <h1>Online FoodShop</h1>
+      <div class="imgs">
+        <div>
+          <img src="./imgs/chef.jpg" alt="chef making food" />
+          <a href="#menu"> <button>Order food</button> </a>
+        </div>
+        <div>
+          <img
+            src="./imgs/magento-2-cancel-order-500x500.webp"
+            alt="cancel order"
+          />
+          <button id="cancel-button">Cancel order</button>
+        </div>
+      </div>
+    </section>
+    <section class="second">
+      <p id="about">
+        A good restaurant offers more than just delicious food—it provides a
+        warm and inviting atmosphere, exceptional service, and a memorable
+        dining experience. From fresh, high-quality ingredients to creative menu
+        options, every detail reflects the chef’s passion and commitment. The
+        ambiance is cozy yet stylish, making it perfect for any occasion,
+        whether a casual meal or a special celebration. A great restaurant
+        values its customers, ensuring prompt service with a smile and attention
+        to every need. It's a place where flavors delight, conversations flow,
+        and every visit feels like a treat.
+      </p>
+    </section>
+    <div id="menu">
+      <div>
+        <img src="./imgs/Chicken.jpg" alt="chicken" />
+        <button>Buy chicken : 15$</button>
+        <img src="./imgs/Pasta.jpg" alt="pasta" />
+        <button>Buy pasta : 5$</button>
+      </div>
+      <div>
+        <img
+          src="./imgs/Is-It-Better-to-Bake-Boil-or-Steam-Sweet-Potatoes.jpg"
+          alt="sweet potatoes"
+        />
+        <button>Buy sweet potato 4$</button>
+        <img src="./imgs/Shrimp.jpg" alt="shrimp" />
+        <button>Buy shrimp : 20$</button>
+      </div>
+    </div>
+    <footer id="contact">
+      <div class="contact">
+        <h1>Contact us</h1>
+        <p>
+          If you have any questions, please provide your contact information so
+          we can reach out to you.
+        </p>
+        <form action="">
+          <input
+            required
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            id="name"
+          />
+          <input
+            required
+            type="email"
+            placeholder="Your Email"
+            name="email"
+            id="email"
+          />
+          <input
+            required
+            type="text"
+            placeholder="Your Message"
+            name="message"
+            id="message"
+          />
+          <input type="submit" name="" id="submit" value="Submit   &rarr;" />
+        </form>
+      </div>
+    </footer>
+    <script>
+      const cancelButton = document.querySelector("#cancel-button");
+      cancelButton.addEventListener("click", () => {
+        alert("Order is cancelled");
+      });
+    </script>
+  </body>
+</html>
